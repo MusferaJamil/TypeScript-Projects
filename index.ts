@@ -18,26 +18,16 @@ let operator = await inquirer.prompt({
   choices: ["addition", "subtraction", "multiplication", "division", "modulus"],
 });
 
-
-if (operator.operator == "addition"){
-    console.log(answer.num1 + answer2.num2)
+if (operator.operator == "addition") {
+  console.log(answer.num1 + answer2.num2);
+} else if (operator.operator == "subtraction") {
+  console.log(answer.num1 - answer2.num2);
+} else if (operator.operator == "multiplication") {
+  console.log(answer.num1 * answer2.num2);
+} else if (operator.operator == "divition") {
+  console.log(answer.num1 / answer2.num2);
+} else if (operator.operator == "modulus") {
+  console.log(answer.num1 % answer2.num2);
+} else {
+  console.log("Error");
 }
-else if (operator.operator == "subtraction"){
-    console.log(answer.num1 - answer2.num2)
-}
-else if (operator.operator == "multiplication"){
-    console.log(answer.num1 * answer2.num2)
-}
-else if (operator.operator == "divition"){
-    console.log(answer.num1 / answer2.num2)
-}
-
-else if (operator.operator == "modulus"){
-    console.log(answer.num1 % answer2.num2)
-}
-
-else {
-    console.log("Error")
-}
-
-
